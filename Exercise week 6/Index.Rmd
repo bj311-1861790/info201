@@ -1,0 +1,18 @@
+---
+title: "Index"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("C18 E1.R")
+headline <- review$headline
+summary <- paste0(">", review$summary)
+link <- paste0("[I'm an inline-style link](", review$link, ")")
+```
+
+## `r headline`
+
+`r summary`
+
+Follow `r link` 
